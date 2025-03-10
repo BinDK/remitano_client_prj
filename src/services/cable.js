@@ -1,3 +1,4 @@
 import { createConsumer } from '@rails/actioncable';
 
-export const consumer = createConsumer('ws://localhost:3000/cable');
+const cableUrl = process.env.REACT_APP_CABLE_URL || 'ws://localhost:3000/cable';
+export const consumer = createConsumer(cableUrl);
