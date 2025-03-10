@@ -66,7 +66,7 @@ const VideoForm = () => {
               placeholder="https://www.youtube.com/watch?v=..."
               className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
-            <p class="mt-2 text-sm text-gray-500">
+            <p className="mt-2 text-sm text-gray-500">
               Enter a valid YouTube URL (youtube.com, youtu.be, or youtube.com/shorts)
             </p>
           </div>

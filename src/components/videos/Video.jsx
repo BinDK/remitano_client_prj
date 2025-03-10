@@ -23,7 +23,7 @@ export default function Video({video}) {
           </p>
         </div>
 
-        <div class="mt-4 flex justify-between items-center relative">
+        <div className="mt-4 flex justify-between items-center relative">
           <Link
             to={video.url}
             target="_blank"
