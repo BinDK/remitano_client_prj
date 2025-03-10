@@ -8,8 +8,10 @@ RUN npm ci
 
 COPY . .
 
-RUN echo "REACT_APP_API_URL=${REACT_APP_API_URL:-http://localhost:3000}" > .env
-RUN echo "REACT_APP_CABLE_URL=${REACT_APP_CABLE_URL:-ws://localhost:3000/cable}" >> .env
+# Hardcode the production URLs
+RUN echo "REACT_APP_API_URL=https://vsharing.bindk.ovh" > .env
+RUN echo "REACT_APP_CABLE_URL=wss://vsharing.bindk.ovh/cable" >> .env
+
 RUN npm run build
 
 # Final stage
